@@ -1,0 +1,33 @@
+// VARS
+$black: #000000;
+$fontH1: 7.5rem;
+$fontH2: 5.7rem;
+$fontH3: 4.4rem;
+$fontH4: 3.75rem;
+$white: rgba(255, 255, 255, 1);
+$white90: rgba(255, 255, 255, 0.9);
+$black90: rgba(0, 0, 0, 0.9);
+$bkg0: rgba(245, 245, 245, 1);
+$bkg: rgba(235, 235, 235, 1);
+$bkg2: rgba(215, 215, 215, 1);
+$grey_dark: rgba(51, 51, 51, 1);
+$grey_med: rgba(128, 128, 128, 1);
+$grey_light: rgba(203, 203, 203, 1);
+$firm: rgba(0, 166, 231, 1);
+$alert: rgba(255, 103, 9, 1);
+$green: rgba(126, 186, 88, 1);
+@mixin fontH1 {
+    font-size: $fontH1;
+}
+
+@mixin fontH2 {
+    font-size: $fontH2;
+}
+
+@mixin fontH3 {
+    font-size: $fontH3;
+}
+
+@mixin fontH4 {
+    font-size: $fontH4;
+}

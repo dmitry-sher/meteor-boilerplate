@@ -1,0 +1,176 @@
+@import "{wolves:bourbon}/bourbon";
+@import "vars.scss";
+html,
+body,
+div,
+p,
+span,
+td,
+input,
+textarea,
+select,
+form {
+    font-family: Helvetica;
+    font-style: normal;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    -webkit-overflow-scrolling: touch;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.fadein-enter {
+    opacity: 0.01;
+}
+
+.fadein-enter.fadein-enter-active {
+    opacity: 1;
+    transition: opacity 50ms ease-in;
+}
+
+.fadein-leave {
+    opacity: 1;
+}
+
+.fadein-leave.fadein-leave-active {
+    opacity: 0.01;
+    transition: opacity 50ms ease-in;
+}
+
+.fontH1 {
+    font-size: $fontH1;
+}
+
+.fontH2 {
+    font-size: $fontH2;
+}
+
+.fontH3 {
+    font-size: $fontH3;
+}
+
+.fontH4 {
+    font-size: $fontH4;
+}
+
+.bWhite {
+    background: $white;
+}
+
+.cFirm {
+    color: $firm;
+}
+
+.cAlert {
+    color: $alert;
+}
+
+.cGreyLight {
+    color: $grey_light;
+}
+
+.cGreyMed {
+    color: $grey_med;
+}
+
+.cGreyDark {
+    color: $grey_dark;
+}
+
+.cWhite {
+    color: $white;
+}
+
+.break {
+    word-break: break-all;
+}
+
+.nobreak {
+    word-break: normal !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+:focus,
+ :active,
+a {
+    outline-color: transparent;
+    outline-style: none;
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-overflow-scrolling: touch;
+}
+
+*:focus {
+    outline: none;
+}
+
+a.block {
+    display: block;
+}
+
+.jcenter {
+    text-align: center;
+}
+
+.jright {
+    text-align: right;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: $bkg;
+}
+
+body.modalOpen {
+    height: 100vh;
+    overflow-y: hidden;
+    .scrollableLayout {
+        position: fixed;
+    }
+}
+
+body.modalOpen2 {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+body,
+#render-target,
+#render-target .container,
+#render-target .container .children {
+    height: 100%;
+}
