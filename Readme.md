@@ -1,4 +1,4 @@
-GMS+ Chat Admin
+Meteor Boilerplate
 ===
 
 ## Prerequisites
